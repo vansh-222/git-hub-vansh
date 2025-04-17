@@ -1,11 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <script src="script.js"></script>
+    <header class=" header d-flex justify-content-between align-items-center p-3 text-white">
+        <div class="header1">
+            <img src="https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-7017516947717339mnyf7eumy.png"
+                alt="Logo">
+            <div class="logo fs-4 fw-bold d-flex justify-content-between align-items-center">JS</div>
+        </div>
+
+        <nav>
+            <ul class="nav ">
+                <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#blogs">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero container py-5">
+        <div class="profile-img">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFLncf9MjIMcg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723647237095?e=1750291200&v=beta&t=-9QRTzkZ333QmE-rpkLi4u6S80x2kSMYimdgZDi3jaE"
+                alt="Vansh's Photo" />
+        </div>
+        <div class="intro-text">
+            <h1>Vansh Kumar</h1>
+            <h2>UI/UX Designer & Web Developer</h2>
+            <p>
+                Dedicated to crafting engaging, user-friendly digital experiences. With a keen eye for detail and a love
+                for clean, modern design, I strive to bridge the gap between functionality and aesthetics.
+            </p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section class="Experiences container text-center">
+        <div class="Experience1-box ">
+            <h3>1+</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="Experience1-box">
+            <h3>10+</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="Experience1-box">
+            <h3>4+</h3>
+            <p>UI/UX Certifications</p>
+        </div>
+        <div class="Experience1-box">
+            <h3>1+</h3>
+            <p>Internships</p>
+        </div>
+    </section>
+
+    <section class="about-me py-5 bg-dark">
+        <div id="about"></div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://cdn.prod.website-files.com/62a85c75feb9bdf4905f9f24/66f5687823ff1656a7cffebf_64b8f7b224a0d8fc833a4e09_pexels-mikhail-nilov-7988079.jpeg"
+                    alt="Vansh's Image" />
+            </div>
+            <div class="about-text">
+                <h2 class="text-center">About Me</h2>
+                <p>
+                    With a strong foundation in Figma, HTML, CSS, JavaScript, and Bootstrap, I specialize in designing
+                    modern, responsive websites and user interfaces that enhance engagement and deliver smooth user
+                    experiences across all devices. My design approach is focused on solving real-world problems through
+                    simplicity, clarity, and purpose-driven visuals.
+                </p>
+                <div class="d-flex flex-wrap gap-3 mt-3 gap-lg-5">
+                    <div class="skill-item">
+                        <i class="bi bi-brilliance fs-2 text-primary"></i>
+                        <span>UI/UX Designer</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-bar-chart-line text-danger fs-2 ms-3"></i>
+                        <span>Software Fundamentals</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-lightbulb text-warning fs-2"></i>
+                        <span>Strategic Thinking</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-bar-chart-steps text-success fs-2"></i>
+                        <span>Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="text-center py-5">
+        <div class="container">
+            <ul class="d-flex flex-wrap justify-content-center list-unstyled gap-4">
+                <li class="bg-gradient text-warning p-2 m-2 rounded">wordpress</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">HTML</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">CSS</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">JavaScript</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">Bootstrap</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">Wix</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">Figma</li>
+                <li class="bg-gradient text-warning p-2 m-2 rounded">canva</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="projects-section">
+        <div id="projects"></div>
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="2025-02-20.png" alt="UPSC website tinkerchild">
+                <div class="project-info">
+                    <h3>UPSC website tinkerchild</h3>
+                    <p>Developed and implemented a comprehensive UPSC website tinkerchild for UPSC Preparation.</p>
+                    <div class="tags">
+                        <span>UPSC Preparation</span>
+                        <span>Current Affairs</span>
+                        <span>UPSC Syllabus</span>
+                    </div>
+                    <a href="">View Project -></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="2025-03-16 (6).png" alt="Cloud Security Solution">
+                <div class="project-info">
+                    <h3>Professional Portfolio</h3>
+                    <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and Bootstrap.
+                    </p>
+                    <div class="tags">
+                        <span>UI/UX</span>
+                        <span>Web Projects</span>
+                        <span>Services</span>
+                    </div>
+                    <a href="">View Project -></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="2025-03-16.png" alt="Incident Response Platform">
+                <div class="project-info">
+                    <h3>PrimeTrust website</h3>
+                    <p> A fictional investment and stock management company, aimed at showcasing financial services and
+                        building brand. </p>
+                    <div class="tags">
+                        <span>Stock Exchange</span>
+                        <span>Bonds</span>
+                        <span>Investment</span>
+                    </div>
+                    <a href="">View Project -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div id="blogs"></div>
+        <h2>Blogs</h2>
+        <div class="blog">
+            <img src="https://trttech.ca/wp-content/uploads/2025/01/web-design-trends-scaled.jpeg" alt="image">
+            <div class="insight-card p-4 shadow rounded h-100 bg-dark">
+                <h3>Top 7 Website Design Trends of 2025 Every Developer Should Know</h3>
+                <p class="text-secondary">Web design is becoming more than just aesthetics — it's about crafting
+                    personalized, interactive, and
+                    fast experiences. </p>
+                <a href="" class="text-decoration-none fw-bold">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div id="contact"></div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Whether you're looking to improve your organization's security posture or discuss potential
+                    collaborations, I'm always open to new opportunities.</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email : vanshnayyar54@gmail.com</li>
+                    <li><i class="fas fa-phone"></i>M.no : +91 6283972395</li>
+                    <li><i class="fas fa-map-marker-alt"></i>City : Pathankot</li>
+                </ul>
+                <div class="contact-socials">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLCCw1J3s_HaFN5wGfUdv4V1NjZyjb_qOFQ&s="
+                        alt="">
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white  ">
+        <div class="footer-container">
+            <div class="footer1">
+                <h3 class="text-warning py-4">JS</h3>
+                <p>Dedicated to securing the digital world through expertise, innovation, and continuous learning.</p>
+            </div>
+
+            <div class="footer1">
+                <h4 class="py-4">Quick Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer1">
+                <h4 class="text-primary py-4">Contact</h4>
+                <p>Address : Pathankot, IN</p>
+                <p>Email : vanshnayyar54@gmail.com</p>
+                <p>M.no : +91 6283972395</p>
+            </div>
+        </div>
+
+        <hr class="footer-line">
+
+        <p class="copyright">
+            © 2024 vansh kumar. All rights reserved.
+        </p>
+    </footer>
+
 </body>
+
 </html>
